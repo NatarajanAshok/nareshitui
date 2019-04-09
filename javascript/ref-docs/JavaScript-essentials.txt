@@ -1,0 +1,217 @@
+HTML essentials
+	-> to define the structure of webpage
+	-> "what" contents you want to place on your page
+
+CSS essentials
+	-> to define Style rules for webpage 
+	-> "how" contents should appear on the webpage 
+
+JavaScript & JQuery
+------------------
+
+	- to provide the functionalities on webpages
+	- provide programming capabilities on webpage
+
+	- it is a "scripting language" used for client side web programming
+	- JS is an interpreted language, which is executed inside the browser using
+		'javascript engine'
+
+		Google Chrome 	=> V8
+		firefox		=> spider monkey
+		IE/Edge		=> chakra
+
+
+	- using javascript...
+		-> DOM Manipulation
+		-> CSS Manipulation
+		-> event handling
+		-> form validations
+		-> business logic
+		-> ajax calls / http requests
+
+JQuery
+------------------------
+	-> jquery is a javascript library, which simplifies js tasks
+	-> it provides severals functions/methods to perform tasks
+	-> jquery is cross-browser
+	-> light weight / open source / fast
+
+
+
+how to embedd javascript code into html pages
+--------------------------------------------------
+
+	1. embedd js using <script> </script> tag
+
+	2. create an extenal .js file, and embedd it inside any html document using <script> tag
+
+		<script src="file1.js"><script>
+
+DOM - Document object model
+-------------------------------
+	-> when the html page is loaded inside the browser, the browser creates
+		set of objects which are arranged in a hierarchical tree kind of 
+		structure which is called as 'DOM'
+
+	-> once the dom tree is created, then rendering engine renderes the 'view' 
+		 on the page
+
+	-> once the page is rendered, we can modify/manipulate the 'view' using javascript
+
+		-> create elementes dynamically
+		-> remove/hide/show/position dynamically 
+
+====================================================================
+
+**==> using NodeJS we can also execute javascript outsite the browser
+**==> NodeJS provides javascript runtime environment
+**==> javascript is object based language
+**==> javascript supports 'Prototypal Inheritance'
+====================================================================
+
+
+variables in javascript 
+--------------------------------
+	- we can declare variables using var keyword
+
+
+datatypes in javascript 
+------------------------------------
+
+	- javascript has datatypes dynamically allocated
+	- the type of variable is determined automatically according the value assigned
+
+
+		var a = 10;		//number
+		var a = 'wecome'	//string 
+		var a = true		//boolean
+
+		var a;			//undefined
+
+		var = { .... }		//object
+
+arrays in javascript & array manipulations
+---------------------------------------------
+
+	*=> in js, arrays are objects
+	
+	var numsArr = [];
+
+	var numsArr = [10, 20, 30, 40, 50];
+
+	var numsArr = new Array();
+
+	var numsArr = new Array(10,20,30,40,50);
+
+
+	Array methods
+	---------------------
+		.push(e)
+			-> adds an element at the end of array
+
+		.pop()
+			-> removes and element from the end
+
+		.unshift(e)
+			-> adds an elements at the beginning of the array
+
+		.shift()
+			- removes an element from the beginning 
+
+		.forEach(callback)
+			- used to iterate array elements 
+
+				.forEach(function(item){
+
+				})
+
+
+			var numsArr = [ 10, 20, 30, 40, 50 ];
+
+			numsArr.forEach(function(num){
+    				console.log(num)
+			})
+
+		.map(callback)
+			-> used to iterate array elements, but it returns a new array containing processed 				elements
+			-> the callback is called for each iteration, and the element is passed as an argument 
+
+
+		.sort()
+
+		.filter()
+
+
+objects in javascript
+------------------------------
+
+
+	1. using object literal 
+
+		var person = {
+			fname : 'vishal',
+			lname : 'shah'
+		}
+
+	2. using new keyword
+
+		var person = new Object();
+		person.fname = 'vishal'
+		person.lname= 'shah'
+
+	3. using function contructor
+
+		function Person(fname, lname){
+			this.fname = fname;
+			this.lname = lname;
+		}
+
+		var p1 = new Person('vishal','shah');
+
+Functions in javascript
+---------------------------------
+	- in javascript function is an object ('first-class' objects)
+
+	function(){
+	
+	}
+
+
+
+jQuery DOM Manipulations
+-----------------------
+
+
+jQuery Event Handling
+--------------------
+
+
+jQuery Ajax Calls
+------------------------
+
+
+jQuery effects
+---------------------
+
+
+jQuery-ui library
+---------------------------
+
+
+Bootstrap / Semantic UI
+-------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
