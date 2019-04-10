@@ -1,0 +1,113 @@
+jQuery
+---------------
+	- it is a javascript library
+	- it provides several functions to perform diff tasks
+	- it is cross-browser, fast, light-weight
+	- using jquery
+		- dom manipulation
+		- css manipulation
+		- event handling
+		- ajax calls
+		- form validation
+		..
+
+versions
+----------
+	- jquery 1.x
+	- jquery 2.x
+	- jquery 3.x
+
+
+how to use jquery
+----------------------
+	1. download jquery library
+
+		a. jquery.com/download
+		b. download either compressed / uncompressed file
+
+	2. attach the .js file to html page
+		<script src="jquery-3.3.1.js"></script>
+
+
+JQuery object
+----------------
+
+	-> the jquery library exposes a global object called as 'jQuery'
+	-> it can be accessed using an alias '$' sign
+
+$(document).ready(callback)
+------------------------
+	-> read() method is called when the document is completely loaded in the browser
+	-> the callback is executed only after the page is loaded in the browser
+
+
+            $(document).ready(function(){
+                
+                $('#head1').css('color','red')
+            
+            })     
+
+
+jQuery Selectors
+-----------------------------
+
+	$(selector).action()
+
+
+	1. element selector
+
+		$('elementName')	-- selects all the elements matching the element 						name
+
+		$('h1')
+
+		$('p')
+
+		$('div p')
+
+	2. id selector 
+
+		$('#idname')	-- selects only a single element, having the given id
+
+	3. class selector 
+
+		$(".classname")  --selects all the elements having the given classname
+
+
+
+
+DOM traversing
+----------------------------
+
+
+DOM manipulation
+-----------------------------
+
+
+CSS Manipulation
+---------------------------
+
+
+event handling
+---------------------------
+
+
+effects
+------------------------------
+
+ajax calls
+-----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
