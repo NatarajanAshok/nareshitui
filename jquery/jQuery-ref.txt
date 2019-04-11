@@ -78,10 +78,40 @@ jQuery Selectors
 DOM traversing
 ----------------------------
 
+	.parent()
+	.parentsUntil()
+
+	
+	.children()
+	.find()
+
+	.next()
+	.nextAll()
+	.nextUntil()
+	.prev()
+	.prevAll()
+	.prevUntil()
 
 DOM manipulation
 -----------------------------
 
+	.html()
+		-> set/get html content of the selected element
+	.text()
+		-> set/get text content of the selected element
+	.val()
+		-> set/get the value of a form element
+
+
+	.attr()
+
+	.prop()
+
+	.show()
+	
+	.hide()
+	
+	.toggle()
 
 CSS Manipulation
 ---------------------------

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <button id="btn1">Click Me</button>
+        <button id="btnRight">Right</button>    
+        <hr/ >
+
+        <h1 id="head1" align="left">This is Heading 1</h1>
+
+
+        <div id="div1" style='border:1px solid red; padding:10px; background:lightyellow;'>
+            <h1> This is Heading </h1>
+            <p id="para1"> This is some paragraph text</p>
+        </div>
+
+        <form action="">
+
+            <input type="text" name="t1" id="t1">
+
+            <input type="button" value="Show" id="btnShow">
+
+        </form>
+
+
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                    $("#btn1").click(function(){
+                        //    console.log($("#div1").html())
+                        //    $("#div1").html(`<h2>This is new content</h2>
+                        //                         <hr>
+                        //                         <p>This is new paragraph</p>`)
+                        //$("#para1").text('This is new text....')
+                        $("#div1").append('<p>This is new paragraph appeded into this div tag..')
+                    })
+
+                    $("#btnShow").click(function(){
+                        console.log($("#t1").val())
+                    })
+                
+                    $("#btnRight").click(function(){
+                        $("#head1").attr('align', 'right')
+                    })
+            });
+        </script>
+    </body>
+</html>

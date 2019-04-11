@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+
+            <form action="">
+
+                <input type="checkbox" name="s1" value="s1" id="s1" /> Select All <br>
+                <hr> 
+
+                <input type="checkbox"  class='checkbox'  name="c1" value="c1"> C1  <br />
+                <input type="checkbox"  class='checkbox' name="c2" value="c2"> C2 <br />
+                <input type="checkbox"  class='checkbox' name="c3" value="c3"> C3 <br />
+                <input type="checkbox" class='checkbox'  name="c4" value="c4"> C4  <br />              
+            </form>
+        </div>
+
+
+
+
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("#s1").change(function(){
+                    // alert($("#s1").nextAll().filter('input:checkbox').length)
+                    $(".checkbox").prop('checked', $("#s1").prop('checked') )
+
+                    $("#s1").nextAll().each(function(index, item){
+                        console.log(index, item)
+                    })
+                })
+
+                $('.checkbox').change(function(){
+                   if($('.checkbox:checked').length!==$(".checkbox").length){
+                        $("#s1").prop('checked', false)
+                   }else{
+                       $("#s1").prop('checked', true)
+                   }
+                })
+            })
+        </script>
+    </body>
+</html>
